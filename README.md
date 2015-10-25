@@ -19,10 +19,10 @@ How to Play:
 
 
 
-1.	a description of the design of the classes.
-•	Board:
-•	private member: 
-•	int* m_Hole[2]: an array of pointer/a 2-D array; m_Hole[0] points to a dynamically allocated array (size is indicated while calling the constructor), of which every element indicates the number of beans in each hole of the north side (eg. m_Hole[0][0]=0 means there is 0 beans in the North’s pot; m_Hole[0][1]=2 means there are two beans in the North’s hole 1); similarly with m_Hole[1] (SOUTH) 
+1.a description of the design of the classes.
+•Board:
+•private member: 
+•int* m_Hole[2]: an array of pointer/a 2-D array; m_Hole[0] points to a dynamically allocated array (size is indicated while calling the constructor), of which every element indicates the number of beans in each hole of the north side (eg. m_Hole[0][0]=0 means there is 0 beans in the North’s pot; m_Hole[0][1]=2 means there are two beans in the North’s hole 1); similarly with m_Hole[1] (SOUTH) 
 •	int m_nHolesPerSide: indicate the number of holes on each side of the board
 •	implementations:
 •	constructor: create two dynamically allocated array, assign “nInitialBeansPerHole” to every element of the 2D array m_Hole[][], except for m_Hole[0][0] and m_Hole[1][0] which initializes to 0; assign “nHoles” to m_nHolesPerSide;
