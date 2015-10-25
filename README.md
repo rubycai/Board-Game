@@ -1,5 +1,24 @@
 # Board-Game
 
+How to Play:
+
+- two players A & B, each mastering one side of the board (North side and South side)
+- each side has k holes, each hole has n beans
+- each player has one pot at the end of the list of holes
+- eg: 2 beans in each hole, 3 holes on each side
+-                 A
+-             2   2   2
+- (A's pot)0             0 (B's pot)
+-             2   2   2
+-                 B
+- each turn the player pick one hole of his own, and spread all the beans in that hole counterclockwisely to the forward holes (and pot), 1 bean for each hole (and pot)
+- if the last bean is spread in his own pot, the player gets another turn
+- if the last bean is spread in a hole originally with zero bean in it, swap the beans in the hole of opposite side to this player's pot
+- if one side's holes are all empty, swap the remaning beans on the other side into that player's pot. game ends
+- compare #beans in each player's pot. whoever has more wins.
+
+
+
 1.	a description of the design of the classes.
 •	Board:
 •	private member: 
